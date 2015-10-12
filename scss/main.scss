@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic);
+
+// Mixins
+
+@import "mixins/clearfix";
+@import "mixins/gradients";
+@import "mixins/image";
+@import "mixins/opacity";
+@import "mixins/vendor-prefixes";
+@import "mixins/center-block";
+
+@import "components/utilities";
+@import "components/buttons";
+@import "components/forms";
+
+
+@import "block01";
+@import "block02";
+@import "block03";
+@import "block04";
+@import "block05";
+@import "block06";
+
+
+/* Base styles
+   ========================= */
+
+* {
+    webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #252525;
+
+}
+
+body {
+    font-size: 14px;
+    background: #fff;
+    position: relative;
+    height: 2000px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    @include clearfix();
+}
+
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #000;
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+
+    &:before {
+        left: 50%;
+        bottom: 0;
+        width: 31px;
+        height: 6px;
+        content: ' ';
+        position: absolute;
+        margin-left: -15px;
+        background: url("../img/sprite.png") -5px -7px;
+    }
+
+    span {
+        color: #4765c3;
+    }
+}
+
+
+p {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
