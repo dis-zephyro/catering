@@ -1,0 +1,160 @@
+.b08 {
+	height: 668px;
+	padding-top: 133px;
+	background: url("../img/b08_bg.jpg") top center no-repeat;
+
+	h2 {
+		text-align: left;
+		margin-left: 470px;
+		margin-bottom: 20px;
+		padding-bottom: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.b08__inner {
+		position: relative;
+	}
+
+	.reply {
+		height: 378px;
+		overflow: hidden;
+		margin-left: 120px;
+		margin-right: 90px;
+		position: relative;
+
+		.reply__item {
+			position: relative;
+		}
+
+		.reply__avatar {
+			float: left;
+			width: 243px;
+			height: 243px;
+			overflow: hidden;
+			@include border-radius(50%);
+		}
+
+		.reply__body {
+			width: 670px;
+			float: right;
+
+			blockquote {
+				margin: 0;
+				color: #444;
+				font-size: 14px;
+				line-height: 17px;
+				position: relative;
+				font-style: italic;
+				padding: 30px 30px 5px 60px;
+
+				p {
+					margin-bottom: 10px;
+				}
+
+				&:before {
+					left: 0;
+					top: 27px;
+					width: 29px;
+					height: 26px;
+					content: " ";
+					position: absolute;
+					background: url("../img/sprite.png") 0 -13px no-repeat;
+				}
+
+				&:after {
+					right: 0;
+					bottom: 5px;
+					width: 29px;
+					height: 26px;
+					content: " ";
+					position: absolute;
+					background: url("../img/sprite.png") -29px -13px no-repeat;
+				}
+			}
+
+			.reply__author {
+				color: #000;
+				font-size: 19px;
+				font-weight: 700;
+				line-height: 24px;
+				text-align: right;
+				margin-right: 45px;
+				margin-bottom: 5px;
+			}
+
+			.reply__status {
+				color: #444;
+				font-size: 15px;
+				line-height: 20px;
+				text-align: right;
+				margin-right: 45px;
+			}
+		}
+
+		.slick-dots {
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: 0;
+			padding: 0;
+			font-size: 0;
+			line-height: 0;
+			list-style: none;
+			text-align: center;
+			position: absolute;
+
+			li {
+				margin: 0 7px;
+				display: inline-block;
+
+				button {
+					padding: 0;
+					width: 12px;
+					height: 12px;
+					outline: none;
+					background: transparent;
+					border: 3px solid #a7a7a7;
+					@include border-radius(50%)
+				}
+
+				&.slick-active {
+
+					button {
+						border-color: #4765c3;
+						background-color: #4765c3;
+					}
+				}
+			}
+		}
+	}
+
+	.reply__nav {
+		top: 90px;
+		width: 28px;
+		height: 64px;
+		cursor: pointer;
+		position: absolute;
+		background: url("../img/peply_nav.png")no-repeat;
+
+		&.prev {
+			left: 20px;
+			background-position: 0 0;
+
+			&:hover {
+				background-position: 0 -64px;
+			}
+		}
+
+		&.next {
+			right: 20px;
+			background-position: -28px 0;
+
+			&:hover {
+				background-position: -28px -64px;
+			}
+		}
+	}
+}
