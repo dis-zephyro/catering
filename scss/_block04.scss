@@ -1,0 +1,39 @@
+.b04 {
+	height: 780px;
+	position: relative;
+	background: url("../img/b04_bg.jpg") top center no-repeat;
+
+	&:before {
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		height: 99px;
+		content: ' ';
+		position: absolute;
+		background: url("../img/b04_top.png") top center no-repeat;
+	}
+
+	&:after {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10;
+		height: 106px;
+		content: ' ';
+		position: absolute;
+		background: url("../img/b04_boottom.png") top center no-repeat;
+	}
+
+	.container {
+		padding-top: 160px;
+	}
+
+	h2 {
+		color: #fff;
+
+		&:before {
+			background-position: -5px 0;
+		}
+	}
+}

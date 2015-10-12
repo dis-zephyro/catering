@@ -1,0 +1,45 @@
+.b06 {
+	padding-top: 55px;
+	padding-bottom: 70px;
+	background: #eef1f6;
+
+	.service {
+		font-size: 0;
+		line-height: 0;
+		margin: 0 -15px;
+		list-style: none;
+		text-align: center;
+		padding: 0 0 35px 0;
+
+		li {
+			width: 370px;
+			height: 440px;
+			position: relative;
+			display: inline-block;
+			margin: 0 15px 25px 15px;
+
+			.service__title {
+				left: 0;
+				bottom: 0;
+				color: #fff;
+				width: 100%;
+				height: 76px;
+				display: table;
+				font-size: 18px;
+				line-height: 24px;
+				text-align: center;
+				position: absolute;
+				text-transform: uppercase;
+				background: rgba(69, 123, 222, 0.8);
+
+				span {
+					width: 100%;
+					height: 76px;
+					overflow: hidden;
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}

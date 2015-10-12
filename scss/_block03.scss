@@ -1,17 +1,43 @@
 .b03 {
 	padding-top: 85px;
-	padding-bottom: 10px;
+	position: relative;
 	background: #eef1f6;
+	padding-bottom: 10px;
+
+	&:before {
+		left: 0;
+		right: 0;
+		top: 440px;
+		height: 544px;
+		content: ' ';
+		z-index: 20;
+		position: absolute;
+		background: url("../img/b02_bg_right.png") top center no-repeat;
+	}
+
+	&:after {
+		left: 0;
+		right: 0;
+		top: 1175px;
+		height: 487px;
+		content: ' ';
+		z-index: 20;
+		position: absolute;
+		background: url("../img/b02_bg_left.png") top center no-repeat;
+	}
 
 	.portfolio {
-		padding: 60px;
+		padding: 55px 60px 50px 60px;
 		background: #fff;
+		position: relative;
 		margin: 0 30px 55px 30px;
 		@include border-radius(5px);
 
 		.portfolio__gallery {
+			z-index: 50;
 			float: left;
 			width: 444px;
+			position: relative;
 
 			.image-big {
 				width: 444px;
@@ -54,14 +80,16 @@
 	}
 
 	.portfolio__description {
-		width: 505px;
+		z-index: 50;
 		float: right;
+		width: 505px;
+		position: relative;
 
 		.portfolio__title {
 			color: #000;
 			font-size: 30px;
 			line-height: 35px;
-			margin-bottom: 15px;
+			margin-bottom: 18px;
 
 			span {
 				color: #4765c3;
@@ -91,7 +119,7 @@
 			color: #444;
 			font-size: 15px;
 			line-height: 21px;
-			padding-bottom: 30px;
+			padding-bottom: 10px;
 
 			.portfolio__made-title {
 				font-size: 18px;
@@ -99,6 +127,10 @@
 				line-height: 20px;
 				margin-bottom: 10px;
 			}
+		}
+
+		.btn {
+
 		}
 	}
 }
