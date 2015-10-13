@@ -14,9 +14,14 @@
 		li {
 			width: 370px;
 			height: 440px;
+			overflow: hidden;
 			position: relative;
 			display: inline-block;
 			margin: 0 15px 25px 15px;
+
+			img {
+				@include transition(.5s ease-out);
+			}
 
 			.service__title {
 				left: 0;
@@ -40,6 +45,19 @@
 					vertical-align: middle;
 				}
 			}
+
+			&:hover {
+
+				img {
+					-webkit-transform: scale(1.2);
+					-moz-transform: scale(1.2);
+					-o-transform: scale(1.2);
+					transform: scale(1.2);
+					@include transition(.5s ease-out);
+				}
+			}
 		}
 	}
+
+
 }

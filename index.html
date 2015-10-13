@@ -3,23 +3,48 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Организация праздничных мероприятий</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=1230">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/slick/slick.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="icons/android-chrome-192x192.png" sizes="192x192">
+        <meta name="msapplication-square70x70logo" content="icons/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content=icons"/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="icons/widetile.png" />
+        <meta name="msapplication-square310x310logo" content=icons"/largetile.png" />
+
     </head>
     
     <body>
 
     <!-- Block 01 -->
         <section class="b01">
+            <div class="video-inner">
+                <video id="videofon" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+                    <source src="video/video.avi">
+                    <source src="video/video.webm" type="video/webm">
+                </video>
+                <div class="video-pattern"></div>
+            </div>
             <div class="b01__top">
                 <div class="container">
                     <div class="logo ir">Событийный кейтеринг по Украине</div>
@@ -31,7 +56,7 @@
                                 <li>+38 (067) 240-24-64</li>
                                 <li>+38 (050) 469-58-98</li>
                             </ul>
-                            <a class="btn btn-callback">Получить консультацию</a>
+                            <a href="#order" class="btn btn-callback btn-modal">Получить консультацию</a>
                         </div>
                     </div>
                     <nav class="topnav clearfix">
@@ -57,17 +82,21 @@
                         <span class="b01__content-text">в Украине под ключ</span>
                     </div>
                     <div class="b01__form">
-                        <form class="form">
+                        <form class="form" name="form" method="POST" action="javascript:void(0);">
                             <div class="form-title">Оставьте заявку и в течении <span>30 минут</span> мы с Вами свяжемся</div>
                             <ul class="form__row clearfix">
                                 <li>
-                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                    <label class="name none required">
+                                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                    </label>
                                 </li>
                                 <li>
-                                    <input type="text" name="phone" class="form-control" placeholder="Ваш телефон">
+                                    <label class="name none required">
+                                        <input type="text" name="phone" class="form-control" placeholder="Ваш телефон">
+                                    </label>
                                 </li>
                                 <li>
-                                    <button type="submit" class="btn btn-submit">Оставить заявку</button>
+                                    <button type="submit" class="btn btn-submit btn-send">Оставить заявку</button>
                                 </li>
                             </ul>
                         </form>
@@ -138,22 +167,34 @@
                     <div class="portfolio__gallery">
                         <div class="image-big">
                             <div id="img1_1">
-                                <img class="img-responsive" src="images/portfolio_1_1-big.jpg" alt="">
+                                <a href="images/portfolio_1_1-big.jpg" rel="gallery1">
+                                    <img class="img-responsive" src="images/portfolio_1_1-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img1_2">
-                                <img class="img-responsive" src="images/portfolio_1_2-big.jpg" alt="">
+                                <a href="images/portfolio_1_2-big.jpg" rel="gallery1">
+                                    <img class="img-responsive" src="images/portfolio_1_2-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img1_3">
-                                <img class="img-responsive" src="images/portfolio_1_3-big.jpg" alt="">
+                                <a href="images/portfolio_1_3-big.jpg" rel="gallery1">
+                                    <img class="img-responsive" src="images/portfolio_1_3-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img1_4">
-                                <img class="img-responsive" src="images/portfolio_1_4-big.jpg" alt="">
+                                <a href="images/portfolio_1_4-big.jpg" rel="gallery1">
+                                    <img class="img-responsive" src="images/portfolio_1_4-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img1_5">
-                                <img class="img-responsive" src="images/portfolio_1_5-big.jpg" alt="">
+                                <a href="images/portfolio_1_5-big.jpg" rel="gallery1">
+                                    <img class="img-responsive" src="images/portfolio_1_5-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img1_6">
-                                <img class="img-responsive" src="images/portfolio_1_6-big.jpg" alt="">
+                                <a href="images/portfolio_1_6-big.jpg" rel="gallery1">
+                                    <img class="img-responsive" src="images/portfolio_1_6-big.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                         <ul class="portfolio-thumbs clearfix">
@@ -202,7 +243,7 @@
                             <p>Клиент был поражен качеством нашей работы.</p>
                         </div>
                         <div class="text-center">
-                            <a href="#order" class="btn btn-medium">Хочу такое мероприятие!</a>
+                            <a href="#order" class="btn btn-medium btn-modal">Хочу такое мероприятие!</a>
                         </div>
                     </div>
                 </div>
@@ -212,22 +253,34 @@
                     <div class="portfolio__gallery">
                         <div class="image-big">
                             <div id="img2_1">
-                                <img class="img-responsive" src="images/portfolio_2_1-big.jpg" alt="">
+                                <a href="images/portfolio_2_1-big.jpg" rel="gallery2">
+                                    <img class="img-responsive" src="images/portfolio_2_1-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img2_2">
-                                <img class="img-responsive" src="images/portfolio_2_2-big.jpg" alt="">
+                                <a href="images/portfolio_2_2-big.jpg" rel="gallery2">
+                                    <img class="img-responsive" src="images/portfolio_2_2-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img2_3">
-                                <img class="img-responsive" src="images/portfolio_2_3-big.jpg" alt="">
+                                <a href="images/portfolio_2_3-big.jpg" rel="gallery2">
+                                    <img class="img-responsive" src="images/portfolio_2_3-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img2_4">
-                                <img class="img-responsive" src="images/portfolio_2_4-big.jpg" alt="">
+                                <a href="images/portfolio_2_4-big.jpg" rel="gallery2">
+                                    <img class="img-responsive" src="images/portfolio_2_4-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img2_5">
-                                <img class="img-responsive" src="images/portfolio_2_5-big.jpg" alt="">
+                                <a href="images/portfolio_2_5-big.jpg" rel="gallery2">
+                                    <img class="img-responsive" src="images/portfolio_2_5-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img2_6">
-                                <img class="img-responsive" src="images/portfolio_2_6-big.jpg" alt="">
+                                <a href="images/portfolio_2_6-big.jpg" rel="gallery2">
+                                    <img class="img-responsive" src="images/portfolio_2_6-big.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                         <ul class="portfolio-thumbs clearfix">
@@ -276,7 +329,7 @@
                             <p>Всё мероприятие было удачно проведено, клиент остался довольным и стал нашим постоянным заказчиком.</p>
                         </div>
                         <div class="text-center">
-                            <a href="#order" class="btn btn-medium">Хочу такое мероприятие!</a>
+                            <a href="#order" class="btn btn-medium btn-modal">Хочу такое мероприятие!</a>
                         </div>
                     </div>
                 </div>
@@ -286,22 +339,34 @@
                     <div class="portfolio__gallery">
                         <div class="image-big">
                             <div id="img3_1">
-                                <img class="img-responsive" src="images/portfolio_3_1-big.jpg" alt="">
+                                <a href="images/portfolio_3_1-big.jpg" rel="gallery3">
+                                    <img class="img-responsive" src="images/portfolio_3_1-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img3_2">
-                                <img class="img-responsive" src="images/portfolio_3_2-big.jpg" alt="">
+                                <a href="images/portfolio_3_2-big.jpg" rel="gallery3">
+                                    <img class="img-responsive" src="images/portfolio_3_2-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img3_3">
-                                <img class="img-responsive" src="images/portfolio_3_3-big.jpg" alt="">
+                                <a href="images/portfolio_3_3-big.jpg" rel="gallery3">
+                                    <img class="img-responsive" src="images/portfolio_3_3-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img3_4">
-                                <img class="img-responsive" src="images/portfolio_3_4-big.jpg" alt="">
+                                <a href="images/portfolio_3_4-big.jpg" rel="gallery3">
+                                    <img class="img-responsive" src="images/portfolio_3_4-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img3_5">
-                                <img class="img-responsive" src="images/portfolio_3_5-big.jpg" alt="">
+                                <a href="images/portfolio_3_5-big.jpg" rel="gallery3">
+                                    <img class="img-responsive" src="images/portfolio_3_5-big.jpg" alt="">
+                                </a>
                             </div>
                             <div id="img3_6">
-                                <img class="img-responsive" src="images/portfolio_3_6-big.jpg" alt="">
+                                <a href="images/portfolio_3_6-big.jpg" rel="gallery3">
+                                    <img class="img-responsive" src="images/portfolio_3_6-big.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                         <ul class="portfolio-thumbs clearfix">
@@ -349,7 +414,7 @@
                             <p>Наш менеджер утвердил весь заказ с компанией МТС, после чего в договоренные сроки было организовано само мероприятие. Клиенты остались очень довольны качеством работы.</p>
                         </div>
                         <div class="text-center">
-                            <a href="#order" class="btn btn-medium">Хочу такое мероприятие!</a>
+                            <a href="#order" class="btn btn-medium btn-modal">Хочу такое мероприятие!</a>
                         </div>
                     </div>
                 </div>
@@ -362,6 +427,9 @@
         <section class="b04" id="nav3">
             <div class="container">
                 <h2>ПОСМОТРИТЕ ВИДЕО О НАШЕЙ КОМПАНИИ</h2>
+                <div class="text-center">
+                    <a href="#video" class="btn-play btn-modal"></a>
+                </div>
             </div>
         </section>
     <!-- Eno Block -->
@@ -486,7 +554,7 @@
                 </li>
             </ul>
             <div class="text-center">
-                <a href="#popup" class="btn btn-large btn-popup">Получить консультацию</a>
+                <a href="#order" class="btn btn-large btn-modal">Получить консультацию</a>
             </div>
         </div>
     </section>
@@ -544,7 +612,7 @@
                             </div>
                             <div class="reply__body">
                                 <blockquote>
-                                    <p>омпания VIP Catering является нашим надежным партнером на протяжении долгих лет. За это время команда показала свою способность с полной ответственностью подходить к поставленным задачам, выполнять работу качественно и в срок, что так важно при организации любого мероприятия, особенно свадеб.</p>
+                                    <p>Компания VIP Catering является нашим надежным партнером на протяжении долгих лет. За это время команда показала свою способность с полной ответственностью подходить к поставленным задачам, выполнять работу качественно и в срок, что так важно при организации любого мероприятия, особенно свадеб.</p>
                                     <p>Отличительной чертой команды VIP Catering является высокий профессионализм, организованность сотрудников и командный дух. Приятно работать с людьми, которые нацелены на общий результат.</p>
                                     <p>А теперь о главном, о кухне. Рецептура блюд, уровень подачи и разнообразие меню легко могут конкурировать с предложениями самых известных
                                         ресторанов Киева. Кроме того, это просто невероятно вкусно. Одним
@@ -641,6 +709,46 @@
             </div>
         </section>
     <!-- Eno Block -->
+
+    <!-- Popup form -->
+        <div class="hide">
+            <div class="myModal" id="order">
+                <div class="myModal__title">ОСТАВЬТЕ <span>ЗАЯВКУ</span> ПРЯМО СЕЙЧАС</div>
+                <div class="myModal__text">Оставьте заявку и получите консультацию по организации вашего корпоративного мероприятия бесплатно</div>
+                <form class="form" name="form" method="POST" action="javascript:void(0);">
+                    <div class="form-group">
+                        <label class="name none required">
+                            <input type="text" name="name" class="form-control invert" placeholder="Ваше имя">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="name none required">
+                            <input type="text" name="phone" class="form-control invert" placeholder="Ваш телефон">
+                        </label>
+                    </div>
+                    <button class="btn-form btn-send">Отправить сообщение</button>
+                </form>
+                <span class="myModal__close"></span>
+            </div>
+        </div>
+    <!-- Popup Done-->
+        <div class="hide">
+            <div class="myModal" id="done">
+                <div class="myModal__title">Спасибо!</div>
+                <div class="myModal__text">Наш менеджер свяжется с вами в ближайшее время.</div>
+                <span class="myModal__close"></span>
+            </div>
+        </div>
+
+    <!-- Popup Video-->
+        <div class="hide">
+            <div class="video-box" id="video">
+               <div class="embed-responsive embed-responsive-16by9">
+                   <iframe src="https://www.youtube.com/embed/fPDraIFxo7E" frameborder="0" allowfullscreen></iframe>
+               </div>
+                <span class="myModal__close"></span>
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

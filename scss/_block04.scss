@@ -31,9 +31,18 @@
 
 	h2 {
 		color: #fff;
+		margin-bottom: 115px;
 
 		&:before {
 			background-position: -5px 0;
 		}
+	}
+
+	.btn-play {
+		width: 147px;
+		height: 147px;
+		cursor: pointer;
+		display: inline-block;
+		background: url("../img/icon-play.png") 0 0 no-repeat;
 	}
 }

@@ -7,8 +7,8 @@
 	&:after {
 		left: 0;
 		right: 0;
+		z-index: 5;
 		top: -58px;
-		z-index: 100;
 		height: 432px;
 		content: ' ';
 		position: absolute;
@@ -16,7 +16,6 @@
 	}
 
 	.container {
-		z-index: 50;
 	}
 
 	.why {
@@ -56,11 +55,27 @@
 					background: url("../img/b02_icons.jpg") no-repeat;
 				}
 
+				&:hover {
+
+					&:before {
+						-moz-transform: rotate(360deg);
+						-webkit-transform: rotate(360deg);
+						-o-transform: rotate(360deg);
+						-ms-transform: rotate(360deg);
+						transform: rotate(360deg);
+						-moz-transition: all 0.5s ease-in-out;
+						-webkit-transition: all 0.5s ease-in-out;
+						-o-transition: all 0.5s ease-in-out;
+						-ms-transition: all 0.5s ease-in-out;
+						transition: all 0.5s ease-in-out;
+					}
+				}
+
 				&.item1 {
 					padding-left: 140px;
 
 					&:before {
-						left: 8px;;
+						left: 8px;
 						background-position: 0 0;
 					}
 				}
@@ -89,6 +104,7 @@
 
 					&:before {
 						left: 8px;
+						z-index: 60;
 						background-position: -109px 0;
 					}
 				}
@@ -116,6 +132,8 @@
 
 		.why__inner {
 			width: 100%;
+			z-index: 60;
+			position: relative;
 			min-height: 109px;
 			display: table-cell;
 			vertical-align: middle;

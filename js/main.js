@@ -1,3 +1,15 @@
+$(document).ready(function() {
+
+
+    var Android = navigator.userAgent.search(/Android/i);
+    var iPhone = navigator.userAgent.search(/iPhone/i);
+    var iPad = navigator.userAgent.search(/iPad/i);
+    if(Android != -1 || iPhone != -1 || iPad != -1) {
+        $('video-inner').addClass('hidden');
+    } else {}
+});
+
+
 $('.topnav li a').click(function(){
     var str=$(this).attr('href');
     $.scrollTo(str, 500, {offset:-105});
@@ -8,12 +20,27 @@ $('.topnav li a').click(function(){
 $('.portfolio__gallery').tabs();
 
 
+$(".image-big a").fancybox({
+    'closeBtn' : false
+});
+
+$(".btn-modal").fancybox({
+    'padding' : 0,
+    'closeBtn' : false
+});
+
+$('.myModal__close').click(function(){
+    $.fancybox.close();
+});
+
+
 //  Slider
 
 $('.reply').slick({
     arrows: false,
     autoplay: true,
     dots: true,
+    autoplaySpeed: 10000,
     slidesToShow: 1,
     slidesToScroll: 1
 });
@@ -74,3 +101,45 @@ function init(){
     myMap.behaviors.disable('multiTouch');
     myMap.geoObjects.add(myPlacemark);
 }
+
+
+$(document).ready(function() {
+
+    // Анимация
+    var Android = navigator.userAgent.search(/Android/i);
+    var iPhone = navigator.userAgent.search(/iPhone/i);
+    var iPad = navigator.userAgent.search(/iPad/i);
+    if(Android != -1 || iPhone != -1 || iPad != -1) {
+
+        $('.video-inner').hide();
+        console.log('tab');
+
+
+    } else {
+        console.log('pc');
+    }
+
+    $('.btn-send').click(function() {
+
+        $('body').find('form:not(this)').children('label').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
+        var answer = checkForm($(this).closest('form').get(0)); //ответ от валидатора
+        if(answer != false)
+        {
+            var $form = $(this).closest('form'),
+                name    =     $('input[name="name"]', $form).val(),
+                phone   =     $('input[name="phone"]', $form).val()
+            console.log(name, phone);
+            $.ajax({
+                type: "POST",
+                url: "form-handler.php",
+                data: {name: name, phone: phone}
+            }).done(function(msg) {
+                console.log(name, phone);
+                $('form').find('input[type=text], textarea').val('');
+                console.log('удачно');
+                $.fancybox.open('#done');
+                setTimeout("$.fancybox.close()", 3000);
+            });
+        }
+    });
+});

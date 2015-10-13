@@ -12,6 +12,7 @@
 @import "components/utilities";
 @import "components/buttons";
 @import "components/forms";
+@import "components/responsive-embed";
 
 
 @import "block01";
@@ -103,7 +104,6 @@ h2 {
     }
 }
 
-
 p {
     padding: 0;
     margin: 0 0 10px 0;
@@ -113,4 +113,78 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+// Modal box
+
+.myModal {
+    width: 848px;
+    padding: 75px ;
+    background: #fff;
+    position: relative;
+
+    .myModal__title {
+        color: #000;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+
+        span {
+            color: #4765c3;
+        }
+    }
+
+    .myModal__text {
+        color: #777;
+        font-size: 22px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .form {
+        width: 566px;
+        margin: 0 auto;
+    }
+
+    .myModal__close {
+        top: 15px;
+        right: 15px;
+        width: 17px;
+        height: 19px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        background: url("../img/sprite.png") -35px -39px no-repeat;
+    }
+}
+
+.video-box {
+    width: 848px;
+}
+
+// Animation
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
