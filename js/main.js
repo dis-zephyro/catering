@@ -1,13 +1,3 @@
-$(document).ready(function() {
-
-
-    var Android = navigator.userAgent.search(/Android/i);
-    var iPhone = navigator.userAgent.search(/iPhone/i);
-    var iPad = navigator.userAgent.search(/iPad/i);
-    if(Android != -1 || iPhone != -1 || iPad != -1) {
-        $('video-inner').addClass('hidden');
-    } else {}
-});
 
 
 $('.topnav li a').click(function(){
@@ -143,3 +133,5 @@ $(document).ready(function() {
         }
     });
 });
+
+
