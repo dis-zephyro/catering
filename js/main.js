@@ -79,7 +79,7 @@ function init(){
     });
 
     myPlacemark = new ymaps.Placemark([50.3958,30.5079], {
-        hintContent: 'ООО ДенталВей'
+        hintContent: ''
     }, {
         iconLayout: 'default#image',
         iconImageHref: 'img/placemark.png',
