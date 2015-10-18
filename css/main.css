@@ -419,6 +419,7 @@ label {
       .b02 .why ul li {
         width: 100%;
         display: table;
+        height: 130px;
         min-height: 109px;
         position: relative;
         margin-bottom: 40px; }
@@ -985,7 +986,7 @@ label {
     top: 0;
     left: 0;
     bottom: 15px;
-    width: 62%;
+    width: 58%;
     position: absolute;
     background: url("../img/b10_content.png") top left repeat-y; }
   .b10 .b10__container {
@@ -996,6 +997,7 @@ label {
     padding-top: 90px; }
   .b10 h2 {
     text-align: left;
+    padding-bottom: 25px;
     margin-bottom: 30px; }
     .b10 h2:before {
       left: 0;
@@ -1004,7 +1006,7 @@ label {
     color: #222;
     font-size: 20px;
     line-height: 27px;
-    margin-left: 90px; }
+    margin-left: 70px; }
     .b10 .b10__contact .contact__address {
       margin-bottom: 25px; }
     .b10 .b10__contact .contact__telephone {
