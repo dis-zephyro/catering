@@ -2,7 +2,7 @@
 
 $('.topnav li a').click(function(){
     var str=$(this).attr('href');
-    $.scrollTo(str, 500, {offset:-105});
+    $.scrollTo(str, 500, {offset: -110});
     return false;
 });
 
