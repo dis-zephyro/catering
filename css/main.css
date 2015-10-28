@@ -266,6 +266,9 @@ label {
           font-size: 18px;
           font-weight: 600;
           line-height: 24px; }
+        .b01 .b01__top .b01__contact .top-phone a {
+          color: #222;
+          text-decoration: none; }
       .b01 .b01__top .b01__contact .btn-callback {
         float: left; }
   .b01 .b01__content {
@@ -647,7 +650,7 @@ label {
   background: #fff url("../img/b05_bg.png") bottom center no-repeat; }
   .b05 .staff {
     padding: 0;
-    height: 450px;
+    height: 540px;
     margin: 0 0 40px 0;
     position: relative; }
     .b05 .staff .staff__image {
@@ -656,20 +659,20 @@ label {
       height: 227px; }
     .b05 .staff .staff__text {
       color: #fff;
-      width: 227px;
-      height: 227px;
+      width: 200px;
+      height: 200px;
       display: none;
-      font-size: 14px;
-      line-height: 18px;
+      font-size: 13px;
+      line-height: 16px;
       text-align: center;
-      padding-top: 75px;
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
+      padding-top: 40px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
       .b05 .staff .staff__text .staff__name {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 17px;
+        line-height: 22px;
         position: relative;
         padding-bottom: 10px;
         margin-bottom: 10px;
@@ -688,15 +691,15 @@ label {
       .b05 .staff .staff__text p {
         margin-bottom: 0; }
     .b05 .staff li {
-      width: 227px;
-      height: 227px;
+      width: 200px;
+      height: 200px;
       cursor: pointer;
       overflow: hidden;
       position: absolute;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
       background: #4765c3; }
       .b05 .staff li:hover .staff__image {
         display: none; }
@@ -704,22 +707,31 @@ label {
         display: block; }
       .b05 .staff li.item1 {
         top: 0;
-        left: 50px; }
+        left: 20px; }
       .b05 .staff li.item2 {
-        top: 0;
-        left: 50%;
-        margin-left: -110px; }
+        top: 226px;
+        left: 85px; }
       .b05 .staff li.item3 {
-        top: 0;
-        right: 50px; }
+        top: 80px;
+        left: 230px; }
       .b05 .staff li.item4 {
-        left: 372px;
-        top: 130px;
-        margin-left: -110px; }
+        left: 440px;
+        top: 0; }
       .b05 .staff li.item5 {
-        top: 130px;
-        right: 260px;
-        margin-left: -110px; }
+        top: 226px;
+        left: 374px; }
+      .b05 .staff li.item6 {
+        top: 145px;
+        left: 586px; }
+      .b05 .staff li.item7 {
+        top: 0;
+        left: 732px; }
+      .b05 .staff li.item8 {
+        top: 226px;
+        right: 172px; }
+      .b05 .staff li.item9 {
+        top: 80px;
+        left: 944px; }
   .b05 .staff__slogan {
     color: #555;
     padding: 12px;
@@ -1013,6 +1025,9 @@ label {
       padding: 0;
       list-style: none;
       margin: 0 0 10px 0; }
+      .b10 .b10__contact .contact__telephone a {
+        color: #222;
+        text-decoration: none; }
     .b10 .b10__contact .contact__email {
       color: #0037ff;
       font-size: 18px;
