@@ -397,7 +397,7 @@ label {
   .b02:after {
     left: 0;
     right: 0;
-    z-index: 5;
+    z-index: 25;
     top: -58px;
     height: 432px;
     content: ' ';
@@ -428,12 +428,13 @@ label {
         margin-bottom: 40px; }
         .b02 .why ul li:before {
           top: 50%;
+          z-index: 100;
           width: 109px;
           height: 109px;
           content: ' ';
           margin-top: -54px;
           position: absolute;
-          background: url("../img/b02_icons.jpg") no-repeat; }
+          background: url("../img/b02_icons.png") no-repeat; }
         .b02 .why ul li:hover:before {
           -moz-transform: rotate(360deg);
           -webkit-transform: rotate(360deg);
