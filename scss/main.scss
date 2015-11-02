@@ -113,13 +113,21 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    &.list {
+        list-style: inherit;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
 }
+
+
 
 // Modal box
 
 .myModal {
     width: 848px;
-    padding: 75px ;
+    padding: 75px;
     background: #fff;
     position: relative;
 
@@ -160,6 +168,25 @@ ul {
         position: absolute;
         background: url("../img/sprite.png") -35px -39px no-repeat;
     }
+
+    &.service__detail {
+        padding: 50px;
+
+        .service__form {
+            float: right;
+            width: 300px;
+
+            .form {
+                width: auto;
+            }
+        }
+
+        .service__text {
+            float: left;
+            width: 420px;
+        }
+    }
+
 }
 
 .video-box {

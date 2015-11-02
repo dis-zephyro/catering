@@ -981,7 +981,7 @@ label {
         padding: 14px 100px 14px 30px; }
 
 .b10 {
-  height: 465px;
+  height: 485px;
   position: relative; }
   .b10:after {
     top: 0;
@@ -1033,7 +1033,7 @@ label {
       font-size: 18px;
       text-decoration: underline; }
     .b10 .b10__contact .social {
-      margin: 0;
+      margin: 0 0 20px 0;
       font-size: 0;
       line-height: 0;
       list-style: none;
@@ -1059,6 +1059,12 @@ label {
           height: 30px;
           cursor: pointer;
           display: inline-block; }
+    .b10 .b10__contact .dev {
+      display: inline-block;
+      color: #222;
+      text-decoration: none; }
+      .b10 .b10__contact .dev span {
+        margin-right: 15px; }
 
 /* Base styles
    ========================= */
@@ -1135,6 +1141,10 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none; }
+  ul.list {
+    list-style: inherit;
+    padding-left: 20px;
+    margin-bottom: 10px; }
 
 .myModal {
   width: 848px;
@@ -1169,6 +1179,16 @@ ul {
     cursor: pointer;
     position: absolute;
     background: url("../img/sprite.png") -35px -39px no-repeat; }
+  .myModal.service__detail {
+    padding: 50px; }
+    .myModal.service__detail .service__form {
+      float: right;
+      width: 300px; }
+      .myModal.service__detail .service__form .form {
+        width: auto; }
+    .myModal.service__detail .service__text {
+      float: left;
+      width: 420px; }
 
 .video-box {
   width: 848px; }
