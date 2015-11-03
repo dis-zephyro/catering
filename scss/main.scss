@@ -173,17 +173,21 @@ ul {
         padding: 50px;
 
         .service__form {
-            float: right;
-            width: 300px;
 
             .form {
                 width: auto;
             }
         }
 
-        .service__text {
+
+        .service__image {
             float: left;
-            width: 420px;
+            width: 300px;
+            margin: 0 20px 20px 0;
+        }
+
+        .service__text {
+            margin-bottom: 30px;
         }
     }
 

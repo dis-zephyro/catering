@@ -54,7 +54,7 @@
 					content: ' ';
 					margin-top: -54px;
 					position: absolute;
-					background: url("../img/b02_icons.png") no-repeat;
+					background: url("../img/b02_icons.jpg") no-repeat;
 				}
 
 				&:hover {
@@ -78,7 +78,7 @@
 
 					&:before {
 						left: 8px;
-						background-position: 0 0;
+						background: url("../img/b02_icons.png") 0 0 no-repeat;
 					}
 				}
 
