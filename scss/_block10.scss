@@ -1,5 +1,4 @@
 .b10 {
-	height: 485px;
 	position: relative;
 
 	&:after {
@@ -20,7 +19,7 @@
 	.b10__content {
 		top: 0;
 		left: 0;
-		bottom: 15px;
+		bottom: 0;
 		width: 58%;
 		position: absolute;
 		background: url("../img/b10_content.png") top left repeat-y;
@@ -31,7 +30,7 @@
 		float: right;
 		text-align: left;
 		padding-left: 26px;
-		padding-top: 90px;
+		padding-top: 70px;
 	}
 
 	h2 {

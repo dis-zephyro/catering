@@ -6,8 +6,19 @@ $('.topnav li a').click(function(){
     return false;
 });
 
+$('.portfolio-thumbs li').click(function (event) {
+    event.preventDefault();
+    var arr = '.' + $(this).attr("data-target");
+    var box = $(this).closest('.portfolio__gallery');
 
-$('.portfolio__gallery').tabs();
+    console.log(arr);
+    console.log(box);
+
+    box.find('.image-big-item').hide();
+    box.find(arr).show();
+    box.find('.portfolio-thumbs li').removeClass('active');
+    $(this).addClass('active');
+});
 
 
 $(".image-big a").fancybox({

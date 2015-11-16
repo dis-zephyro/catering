@@ -14,77 +14,6 @@
 		background: url("../img/header_bottom.png") bottom center no-repeat;
 	}
 
-	.b01__top {
-		top: 0;
-		left: 0;
-		right: 0;
-		content: " ";
-		z-index: 500;
-		height: 169px;
-		position: fixed;
-		background: url("../img/header_top.png") top center no-repeat;
-
-		.container {
-			height: 100%;
-			padding-top: 15px;
-		}
-
-		.logo {
-			left: 50%;
-			top: 12px;
-			width: 139px;
-			height: 139px;
-			margin-left: -70px;
-			position: absolute;
-			background: url("../img/logo.png") 0 0 no-repeat;
-		}
-
-		.b01__name {
-			color: #222;
-			float: left;
-			width: 480px;
-			height: 85px;
-			font-size: 26px;
-			font-weight: 600;
-			line-height: 34px;
-			text-align: right;
-		}
-
-
-		.b01__contact {
-			color: #222;
-			float: right;
-			width: 480px;
-			font-size: 26px;
-			font-weight: 600;
-			line-height: 30px;
-			text-align: left;
-
-			.top-phone {
-				margin: 0;
-				padding: 0;
-				float: left;
-				width: 196px;
-				list-style: none;
-
-				li {
-					font-size: 18px;
-					font-weight: 600;
-					line-height: 24px;
-				}
-
-				a {
-					color: #222;
-					text-decoration: none;
-				}
-			}
-
-			.btn-callback {
-				float: left;
-			}
-		}
-	}
-
 	.b01__content {
 		left: 0;
 		right: 0;
@@ -241,6 +170,84 @@
 					border-color: transparent;
 				}
 			}
+		}
+	}
+}
+
+.topbar {
+	top: 0;
+	left: 0;
+	right: 0;
+	content: " ";
+	z-index: 500;
+	height: 169px;
+	position: fixed;
+	background: url("../img/header_top.png") top center no-repeat;
+
+	&.hidenav {
+
+		.container {
+			padding-top: 30px;
+		}
+	}
+
+	.container {
+		height: 100%;
+		padding-top: 15px;
+	}
+
+	.logo {
+		left: 50%;
+		top: 12px;
+		width: 139px;
+		height: 139px;
+		margin-left: -70px;
+		position: absolute;
+		background: url("../img/logo.png") 0 0 no-repeat;
+	}
+
+	.b01__name {
+		color: #222;
+		float: left;
+		width: 480px;
+		height: 85px;
+		font-size: 26px;
+		font-weight: 600;
+		line-height: 34px;
+		text-align: right;
+	}
+
+
+	.b01__contact {
+		color: #222;
+		float: right;
+		width: 480px;
+		font-size: 26px;
+		font-weight: 600;
+		line-height: 30px;
+		text-align: left;
+
+		.top-phone {
+			margin: 0;
+			padding: 0;
+			float: left;
+			width: 196px;
+			list-style: none;
+
+			li {
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 24px;
+			}
+
+			a {
+				color: #222;
+				text-decoration: none;
+			}
+		}
+
+		.btn-callback {
+			float: left;
 		}
 	}
 }
